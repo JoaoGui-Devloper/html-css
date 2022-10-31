@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+        <p>Tente aumentar ou diminuir o tamanho do seu navegador para mudar o tamanho da imagem.</p>
+    <picture>
+        <source media="(min-width: 1030px)" srcset="imagens/foto-g.png" type="image/png">
+        <source media="(min-width: 730px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-p.png" alt="imagem flexivel">
+    </picture>
+
+    <h1>Áudio</h1>
+
+        <audio src="#" controls loop preload="metadata" type="#"></audio>
+
+        <audio preload="metadata" loop controls>
+            <source src="#" type="audio/mpeg">
+            <source src="#" type="audio/ogg">
+            <source src="#" type="audio/wav">
+            <p>Infelizmente o seu navegador não suporta esse áudio. <a href="#" download="algum arquivo" type="audio/mpeg">Clique aqui para baixa-lo em MP3.</a></p>
+        </audio>
+
+</body>
+</html>
