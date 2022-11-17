@@ -8,14 +8,25 @@
     <style>
         table {
             border-collapse: collapse;
-            width: 400px;
+            width: 300px;
+            position: relative;
         }
 
         caption {
             font-size: 1.5;
             font-weight: bold;
             padding: 10px;
-            background-color: lightgray;
+            background-color: rgb(74, 69, 69);
+            color: white;
+            margin-bottom: 0px;
+            border: 1px solid black;
+            border-bottom-color: transparent;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(74, 69, 69);
         }
 
         th, td {
@@ -23,13 +34,24 @@
             padding: 10px;
         }
 
+        tbody > tr:nth-child(even) {
+            background-color: lightgray; 
+        }
+        /* ou :nth-child(2n) */
+
+        tbody > tr:nth-child(odd) {
+            background-color: rgb(197, 237, 225);
+        }
+        /* ou :nth-child(2n-1) */
+
         thead, tfoot {
-            background-color: gray;
+            background-color: rgb(74, 69, 69);
             color: white;
         }
 
         .num {
             text-align: right;
+            width: 50px;
         }
 
     </style>
