@@ -33,7 +33,7 @@
         border: 2px solid black;
     }
 
-    
+
 }
 
 @media screen and (min-width: 993px) and (max-width: 1200px) /* DESKTOP */{
@@ -61,5 +61,17 @@
 
     body {
         background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main {
+        max-width: 25vw;
+    }
+
+    img#tv {
+        min-width: 15vw;
+    }
+
+    h1 {
+        font-size: 2.2rem;
     }
 }
