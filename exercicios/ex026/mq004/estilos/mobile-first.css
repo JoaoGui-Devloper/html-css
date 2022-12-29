@@ -41,10 +41,3 @@ img {
 #tablet, #print, #pc, #tv {
     display: none;
 }
-
-@media screen and (orientation: landscape) {
-
-    main {
-        max-width: 700px;
-    }
-}
