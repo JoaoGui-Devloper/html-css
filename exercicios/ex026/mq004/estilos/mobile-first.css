@@ -41,3 +41,10 @@ img {
 #tablet, #print, #pc, #tv {
     display: none;
 }
+
+@media screen and (orientation: landscape) {
+    body {
+        background: black url(../imagens/back-phone.jpg) no-repeat center center fixed;
+        background-size: cover;
+    }
+}
