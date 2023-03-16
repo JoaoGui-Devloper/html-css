@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Código-Fonte / Pré-Formatação / Citações Simples e Completas / Abreviações</h1>
+        <h2>Código-Fonte / Pré-Formatação</h2>
+            <p>É possivel usar a tag &lt; code &gt; para transformar a fonte em uma fonte MonoEspaçada (todos os caracteres tem a mesma largura dos pixels) sendo ideal para descrever códigos ou comandos. Como a seguir:</p>
+
+            <p>O comando <code>document.getElementyById('teste')</code> é escrito em linguagem javaScript.</p>
+
+            <p>A tag &lt; pre &gt; serve para que o texto escrito nela não seja alterado e continue com a mesma formatação que tem nas linhas de código, com espaçamentos e quebras de linha, também sendo ideal para descrever algum código ou comando. Como a seguir:</p>
+
+                <pre>
+                    <code>
+                num = int(input('digite um número'))
+                if num % 2 == 0:
+                    print(f'O número {num} é par')
+                else:
+                    print(f'O número {num} é impar')
+                print('fim do programa)
+                    </code>
+                </pre>
+
+        <h2>Citações Simples</h2>
+            <p>É possivel apresentar citações no código usando a tag &lt; q &gt; que significa citação. Por exemplo na frase a seguir:</p>
+            <p>Como se diz fulano: <q>o computador é um burro muito rápido</q></p>
+            <p>É possivel nesses casos apenas usar as aspas, mas ao usar a tag &lt; q &gt; você da um sentido de que aquilo é uma citação e não apenas uma forma colocando as aspas.</p>
+
+        <h2>Citações Completas</h2>
+            <p>Usando a tag &lt; blockquote &gt; é possivel criar uma citação de bloco, que é mais longa que a simples. No atributo cite, que é um atributo do &lt; blockquote &gt; é possivel colocar o endereço de onde vem essa citação, não aparece para o usuario, mas é usado pelos mecanismos de busca do browser.<br> Dessa forma.</p>
+
+            <p>Segundo fulano fulano, em seu livro tal:<blockquote cite="endereço do post, livro ou outro texto que você queira citar">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam velit unde itaque voluptate cum! Culpa aut voluptatem cupiditate assumenda reiciendis eveniet, numquam consequuntur voluptatibus natus beatae eius nisi nihil minima!
+            </blockquote></p>
+
+               
+
+        <h2>Abreviações</h2>
+        <p>Usando a tag &lt; abbr &gt; é possivel colocar os nomes de abreviações que você queira colocar no site, eles apareceram como um balão quando se passar o cursor do mouse por cima da abreviação. como a seguir:</p>
+        
+        <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascating Style Sheets">CSS</abbr>.</p>
+
+        <p>É possivel alterar o sublinhado usando o CSS depois.</p>
+
+</body>
+</html>

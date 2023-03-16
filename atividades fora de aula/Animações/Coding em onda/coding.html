@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animação em onda</title>
+    <style>
+        body {
+            background-image: linear-gradient(to right, rgb(10, 10, 10), rgba(26, 24, 24, 0.918), rgba(44, 40, 40, 0.815));
+        }
+
+        .wave {
+            margin-top: 250px;
+            text-align: center;
+            font-size: 60px;
+            color: white;
+            -webkit-box-reflect:
+            below -20px
+            linear-gradient(transparent, rgba(0,0,0,0.2))
+        }
+
+        .wave span {
+            font-family: fantasy;
+            display: inline-block;
+            animation: wave-anim 1s infinite;
+            animation-delay: calc(0.1s * var(--item));
+        }
+
+        @keyframes wave-anim {
+            0%,
+            40%,
+            100% {
+                transform: translateY(0);
+            }
+            20% {
+                transform: translateY(-20px);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wave">
+        <span style = "--item:1">C</span>
+        <span style = "--item:2">O</span>
+        <span style = "--item:3">D</span>
+        <span style = "--item:4">I</span>
+        <span style = "--item:5">N</span>
+        <span style = "--item:6">G</span>
+    </div>
+        
+</body>
+</html>
